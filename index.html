@@ -67,9 +67,6 @@
                 <button id="themeToggle" class="p-2.5 rounded-xl bg-slate-200/60 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-all">
                     <i id="themeIcon" class="fa-solid fa-moon"></i>
                 </button>
-                <button onclick="toggleModal('vscodeModal')" class="hidden sm:flex items-center gap-2 px-3.5 py-2 text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl shadow-md transition-all">
-                    <i class="fa-brands fa-square-js"></i> Guía VS Code
-                </button>
             </div>
         </div>
     </header>
@@ -170,49 +167,6 @@
         </section>
 
     </main>
-
-    <!-- Modal con instrucciones de VS Code -->
-    <div id="vscodeModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-2xl w-full p-6 space-y-4 shadow-2xl relative">
-            <button onclick="toggleModal('vscodeModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
-                <i class="fa-solid fa-xmark text-xl"></i>
-            </button>
-
-            <div class="flex items-center gap-3 text-indigo-600 dark:text-indigo-400">
-                <i class="fa-solid fa-folder-tree text-2xl"></i>
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Estructura de Archivos para VS Code</h3>
-            </div>
-
-            <p class="text-xs text-slate-600 dark:text-slate-400">
-                Para vincular tus imágenes y videos reales en tu proyecto local de Visual Studio Code, te recomendamos organizar la carpeta raíz del proyecto así:
-            </p>
-
-            <div class="bg-slate-950 text-slate-200 p-4 rounded-xl font-mono text-xs overflow-x-auto space-y-1">
-                <p class="text-emerald-400">📁 mi-bitacora/</p>
-                <p class="pl-4">├── 📄 index.html <span class="text-slate-500">(este archivo)</span></p>
-                <p class="pl-4 text-amber-300">└── 📁 assets/</p>
-                <p class="pl-8 text-amber-300">├── 📁 imagenes/</p>
-                <p class="pl-12 text-slate-400">├── crecimiento_viernes.jpg</p>
-                <p class="pl-12 text-slate-400">├── crecimiento_sabado.jpg</p>
-                <p class="pl-12 text-slate-400">├── crecimiento_domingo.jpg</p>
-                <p class="pl-12 text-slate-400">├── estudio_viernes.jpg</p>
-                <p class="pl-12 text-slate-400">├── ...</p>
-                <p class="pl-8 text-amber-300">└── 📁 videos/</p>
-                <p class="pl-12 text-slate-400">├── estudio_domingo.mp4</p>
-                <p class="pl-12 text-slate-400">└── apoyo_viernes.mp4</p>
-            </div>
-
-            <p class="text-xs text-slate-500 dark:text-slate-400">
-                💡 **Nota:** La aplicación ya está programada para buscar automáticamente las imágenes en estas rutas de `assets/`. Si no existen las imágenes en tu carpeta local, se mostrará un placeholder estético por defecto sin romper la interfaz.
-            </p>
-
-            <div class="text-right pt-2">
-                <button onclick="toggleModal('vscodeModal')" class="px-4 py-2 bg-indigo-600 text-white text-xs font-semibold rounded-xl hover:bg-indigo-700 transition">
-                    Entendido
-                </button>
-            </div>
-        </div>
-    </div>
 
     <script>
         // Data Principal de la Rueda
@@ -553,12 +507,6 @@
                     </div>
                 `;
             }).join('');
-        }
-
-        // Modales y Temas
-        function toggleModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.toggle('hidden');
         }
 
         // Dark Mode Logic
