@@ -135,9 +135,9 @@
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
                 <div>
                     <span class="text-xs font-bold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">Paso 2</span>
-                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">El Registro Diario (9 Registros)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">El Registro Diario (12 Registros)</h2>
                     <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
-                        Tres dimensiones seleccionadas × Tres días (Viernes, Sábado, Domingo) con sus 3 elementos clave.
+                        Tres dimensiones seleccionadas × Cuatro días (Viernes, Sábado, Domingo y Lunes) con sus 3 elementos clave.
                     </p>
                 </div>
 
@@ -152,10 +152,11 @@
                     </select>
 
                     <select id="filterDay" class="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-xs rounded-xl px-3 py-2 focus:ring-2 focus:ring-indigo-500 outline-none">
-                        <option value="ALL">Todos los Días (3)</option>
+                        <option value="ALL">Todos los Días (4)</option>
                         <option value="Viernes">Viernes</option>
                         <option value="Sábado">Sábado</option>
                         <option value="Domingo">Domingo</option>
+                        <option value="Lunes">Lunes</option>
                     </select>
                 </div>
             </div>
@@ -224,6 +225,16 @@
                 mediaSrc: "assets/imagenes/crecimiento personal domingo.jpeg",
                 placeholder: "https://placehold.co/600x400/0f172a/22c55e?text=Sol+Manana+-+Domingo"
             },
+            {
+                area: "Crecimiento personal",
+                day: "Lunes",
+                action: "Aprendo inglés para mi futuro",
+                emotion: "Motivación y compromiso",
+                learning: "Aprender inglés amplía mis oportunidades y me prepara mejor para mi futuro profesional.",
+                mediaType: "image",
+                mediaSrc: "assets/imagenes/crecimiento personal lunes.jpeg",
+                placeholder: "https://placehold.co/600x400/0f172a/22c55e?text=Aprender+Ingles+-+Lunes"
+            },
 
             // Trabajo / Estudio
             {
@@ -256,6 +267,16 @@
                 mediaSrc: "assets/videos/domingo estudio y trabajo.mp4",
                 placeholder: "https://placehold.co/600x400/0f172a/3b82f6?text=Bitacora+Campusland+-+Domingo"
             },
+            {
+                area: "Trabajo/Estudio",
+                day: "Lunes",
+                action: "Soluciono un problema de Git que tengo desde el sábado",
+                emotion: "Alivio y satisfacción",
+                learning: "Investigar y resolver un problema de Git fortalece mi autonomía para enfrentar retos técnicos.",
+                mediaType: "image",
+                mediaSrc: "assets/imagenes/estudio trabajo lunes.jpeg",
+                placeholder: "https://placehold.co/600x400/0f172a/3b82f6?text=Solucionar+Git+-+Lunes"
+            },
 
             // Apoyo Social
             {
@@ -287,6 +308,16 @@
                 mediaType: "video",
                 mediaSrc: "assets/videos/apoyo social domingo.mp4",
                 placeholder: "https://placehold.co/600x400/0f172a/ec4899?text=Juego+con+Ninos+-+Domingo"
+            },
+            {
+                area: "Puntos de apoyo social",
+                day: "Lunes",
+                action: "Comparto comida con mis compañeros, futuros colegas de trabajo",
+                emotion: "Compañerismo y cercanía",
+                learning: "Compartir con mis compañeros fortalece los vínculos y construye un ambiente de trabajo colaborativo.",
+                mediaType: "image",
+                mediaSrc: "assets/imagenes/apoyo social lunes.jpeg",
+                placeholder: "https://placehold.co/600x400/0f172a/ec4899?text=Compartir+Comida+-+Lunes"
             }
         ];
 
