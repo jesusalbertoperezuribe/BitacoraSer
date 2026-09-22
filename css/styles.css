@@ -1,0 +1,22 @@
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.dark .glass-panel {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.wheel-segment {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.wheel-segment:hover {
+    filter: brightness(1.15) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    transform: scale(1.01);
+    transform-origin: center;
+}
